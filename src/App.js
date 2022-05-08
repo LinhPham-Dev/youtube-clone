@@ -12,8 +12,8 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		this.onTermSubmit("react js");  
-	} 
+		this.onTermSubmit("sprider man");
+	}
 
 	onTermSubmit = async (search) => {
 		const response = await youtube.get("/search", {

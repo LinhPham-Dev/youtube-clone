@@ -23,7 +23,7 @@ class SearchBar extends Component {
 				<form onSubmit={this.onFormSubmit} className="ui form">
 					<div className="field">
 						<label htmlFor="search">
-							<h3>Youtube Videos Search</h3>
+							<h3>PNL - Clone Youtube</h3>
 						</label>
 						<input
 							id="search"
