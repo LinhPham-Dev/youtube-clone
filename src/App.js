@@ -12,7 +12,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		this.onTermSubmit("sprider man");
+		this.onTermSubmit("doctor strange");
 	}
 
 	onTermSubmit = async (search) => {
@@ -21,8 +21,6 @@ class App extends Component {
 				q: search,
 			},
 		});
-
-		console.log(response);
 
 		this.setState({
 			videos: response.data.items,
