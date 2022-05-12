@@ -11,7 +11,6 @@ export default axios.create({
 	params: {
 		part: "snippet",
 		type: "video",
-		// chart: "mostPopular", ,contentDetails,statistics
 		maxResults: 50,
 		key: KEY,
 	},
