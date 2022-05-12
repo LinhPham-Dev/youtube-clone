@@ -20,6 +20,7 @@ export const SearchBar = ({ onFormSubmit }) => {
 						id="search"
 						type="text"
 						name="search-youtube"
+						autoComplete="off"
 						value={search}
 						onChange={(event) => setSearch(event.target.value)}
 					/>

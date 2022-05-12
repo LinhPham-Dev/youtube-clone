@@ -11,7 +11,11 @@ const VideoDetail = ({ video }) => {
 	return (
 		<div>
 			<div className="ui embed">
-				<iframe title="video player" src={videoSrc} />
+				<iframe
+					allowFullScreen="allowfullscreen"
+					title="video player"
+					src={videoSrc}
+				/>
 			</div>
 			<div className="ui segment">
 				<h4 className="ui header">
@@ -19,7 +23,7 @@ const VideoDetail = ({ video }) => {
 				</h4>
 				<h4>{video.snippet.title}</h4>
 				<h5 className="ui header">
-					Release:{" "}
+					Release:
 					{moment(video.snippet.publishTime).format("MMMM Do YYYY")}
 				</h5>
 				<p>Description: {video.snippet.description}</p>
